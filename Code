@@ -1,0 +1,9 @@
+var link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+link.href = 'https://stackoverflow.com/favicon.ico'; //changes icon to google drive icon. you can change this by replacing the link
+
+document.title = 'Google Drive'; //changes the name of tab to Google Drive
